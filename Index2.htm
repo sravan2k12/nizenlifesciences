@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizen lifesciences Pvt ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Carousel styles */
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            animation: slide 12s infinite;
+        }
+
+        @keyframes slide {
+            0% {transform: translateX(0);}
+            33% {transform: translateX(-100%);}
+            66% {transform: translateX(-200%);}
+            100% {transform: translateX(0);}
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .main-section {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #e9ecef;
+            padding: 15px;
+            height: 600px;
+            overflow-y: auto;
+            border-left: 2px solid #ccc;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #004080;
+        }
+
+        .sidebar p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <!-- <h1>Forma</h1> -->
+			<img src="images/logo.jpeg" style="width:160px;height:60px;left:5px" />			
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="images/img1.jpg" alt="Slide 1">
+            <img src="images/img2.jpg" alt="Slide 2">
+            <img src="images/img3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Main Content and Sidebar -->
+    <div class="main-section">
+        <div class="content">
+            <section class="hero">
+                <h2>Welcome to Nizen lifesciences Pvt ltdNizen lifesciences Pvt ltd</h2>
+                <p>Your trusted partner in innovation and excellence.</p>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <h3>Sponsored Ads</h3>
+            <p>Ad 1: Buy our product now!</p>
+            <p>Ad 2: Limited time offer!</p>
+            <p>Ad 3: Sign up for updates!</p>
+            <p>Ad 4: Join our newsletter!</p>
+            <p>Ad 5: Discover new trends!</p>
+            <p>Ad 6: Explore our services!</p>
+            <p>Ad 7: Contact for deals!</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nizen lifesciences Pvt ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
